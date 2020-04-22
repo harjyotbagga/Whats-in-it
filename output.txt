@@ -1,0 +1,175 @@
+{
+  "status": {
+    "code": 10000,
+    "description": "Ok",
+    "req_id": "d642d99dcbd1403393a58192e02c4bc9"
+  },
+  "outputs": [
+    {
+      "id": "c8344afd917a45779d2e78ebdb4b2a32",
+      "status": {
+        "code": 10000,
+        "description": "Ok"
+      },
+      "created_at": "2020-04-22T08:00:22.310217123Z",
+      "model": {
+        "id": "bd367be194cf45149e75f01d59f77ba7",
+        "name": "food-items-v1.0",
+        "created_at": "2016-09-17T22:18:59.955626Z",
+        "app_id": "main",
+        "output_info": {
+          "output_config": {
+            "concepts_mutually_exclusive": false,
+            "closed_environment": false,
+            "max_concepts": 0,
+            "min_value": 0.0
+          },
+          "message": "Show output_info with: GET /models/{model_id}/output_info",
+          "type": "concept",
+          "type_ext": "concept"
+        },
+        "model_version": {
+          "id": "dfebc169854e429086aceb8368662641",
+          "created_at": "2016-09-17T22:18:59.955626Z",
+          "status": {
+            "code": 21100,
+            "description": "Model is trained and ready"
+          }
+        },
+        "display_name": "Food"
+      },
+      "input": {
+        "id": "b65e29d86f4b47ec9edb52b8f76ea097",
+        "data": {
+          "image": {
+            "url": "https://samples.clarifai.com/food.jpg"
+          }
+        }
+      },
+      "data": {
+        "concepts": [
+          {
+            "id": "ai_GC6FB0cQ",
+            "name": "sauce",
+            "value": 0.9983315467834473,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_fBH5DFMJ",
+            "name": "pasta",
+            "value": 0.9958751201629639,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_XN1QLhwp",
+            "name": "penne",
+            "value": 0.9758907556533813,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_2KV5G1Fg",
+            "name": "basil",
+            "value": 0.9757404327392578,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_KWmFf1fn",
+            "name": "meat",
+            "value": 0.9716323018074036,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_XVpwLB09",
+            "name": "beef",
+            "value": 0.9662880897521973,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_qmTM9wzt",
+            "name": "spaghetti",
+            "value": 0.9625043869018555,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_CB8hsS3T",
+            "name": "tomato",
+            "value": 0.9441729784011841,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_FnZCSVMH",
+            "name": "cheese",
+            "value": 0.8896162509918213,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_CQT1pP96",
+            "name": "macaroni",
+            "value": 0.8691421747207642,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_NDbbpCv1",
+            "name": "vegetable",
+            "value": 0.8645167350769043,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_CSW3Njnd",
+            "name": "meat sauce",
+            "value": 0.8525689840316772,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_3fJXxTPQ",
+            "name": "sausage",
+            "value": 0.6800891757011414,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_ZBtC2kLC",
+            "name": "spaghetti bolognese",
+            "value": 0.6273210048675537,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_Bh2xGwKk",
+            "name": "tomato sauce",
+            "value": 0.6137848496437073,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_TRbv6FWL",
+            "name": "pork",
+            "value": 0.5720773339271545,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_cdw5bgmc",
+            "name": "pasta sauce",
+            "value": 0.4646149277687073,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_6s1vcbq9",
+            "name": "garlic",
+            "value": 0.45499223470687866,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_gNpKXVhq",
+            "name": "tagliatelle",
+            "value": 0.45064646005630493,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_gLHbKNPn",
+            "name": "parmesan",
+            "value": 0.44501784443855286,
+            "app_id": "main"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>What's in it!?</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Let's find What's in it?</h3>
+        <form method="POST" action=".">
+            {% csrf_token %}
+            {{ url_form.as_p }}
+            <input type="submit" name="submit" value="Search via URL">
+        </form>
+        <br>
+        <br>
+        <form method="POST" action="." enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="image_field">
+            <input type="submit" name="submit" value="Search via Image">
+        </form>
+        <br>
+        <hr>
+        <br>
+        {% if request.method == 'POST' %}
+            <img src="{{ source_img }}" alt="source_image" height="250" width="250">
+            <table borders="1" cellpadding="5" cellspacing="5">
+                <tr>
+                    <th>INGREDIENTS</th>
+                    <th>PROBABILITY OF AVAILABILITY</th>
+                </tr>
+                {% for ingredient in ingredients %}
+                <tr>
+                    {% for i in ingredient %}
+                    <td>{{ i }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+       
+    </body>
+</html>
